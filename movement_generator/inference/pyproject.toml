@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="punched_movement_generator_inference"
+version = "0.0.1"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+log_format = "%(asctime)s %(levelname)-3s %(pathname)s:%(lineno)d %(message)s"
+addopts = "--log-cli-level=DEBUG -s"
+testpaths = ["tests"]
+
+[tool.ruff]
+include=[
+    "src/**/*.py",
+]

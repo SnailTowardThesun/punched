@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "movement_generator"
+version = "0.1.0"
+authors = [
+    {name = "hankun", email = "hankun1991@outlook.com"},
+]
+description = "Using LLM to generate movement for blank punching"
+readme = "README.md"
+requires-python = ">=3.10"
