@@ -1,11 +1,11 @@
-package org.punched.user_system
+package org.punched.client
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class UserSystemAuthorizationApplication
+class PunchedUserClientApplication
 
 fun main(args: Array<String>) {
-    runApplication<UserSystemApplication>(*args)
+	runApplication<PunchedUserClientApplication>(*args)
 }

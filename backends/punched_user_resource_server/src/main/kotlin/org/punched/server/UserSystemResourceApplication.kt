@@ -1,11 +1,11 @@
-package org.punched.user_system
+package org.punched.server
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class UserSystemApplication
+class UserSystemResourceApplication
 
 fun main(args: Array<String>) {
-    runApplication<UserSystemApplication>(*args)
+    runApplication<UserSystemResourceApplication>(*args)
 }
